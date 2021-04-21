@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SECM | Cadastramento de Membro</title>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+  <link rel="stylesheet" href="../../dist/css/main.css">
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <script src="../../dist/js/inputs.js"></script>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="inde" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../pages/examples/contacts.html" class="nav-link">Direcção da Classe</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-blue-info elevation-3">
+      <!-- Brand Logo -->
+      <img src="../../dist/img/estrela.jpg" alt="Estrela da Igreja" class="brand-image img-circle elevation-3"
+        style="opacity: .7; width: 3rem; margin-left: 6.5rem; margin-top: 1rem;">
+      <a href="index.html" class="brand-link">
+        <span class="brand-text font-weight-light">
+          <h2 style="text-align: center; color: #447e9b">SGECM</h2>
+        </span>
+      </a>
+      <a href="../../index.html" class="brand-link" style="text-align: center;">
+        <!--<img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">--->
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block" style="color: #447e9b">Marcos Mandamba</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Gestão Geral
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Membros
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="nav-icon fas fa-users"></i>
+                        Novo Membro
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../../pages/tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fas fa-table"></i>
+                        <p>Membros no Geral</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Actividades
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Todas Actividades</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Nova</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Património
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Lista Patrimonial</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Registro Novo</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Financeira
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item" style="margin-left: 1rem;">
+                      <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-trash-o"></i>
+                        Caixa
+                        <i class="fas fa-angle-left right"></i>
+                      </a>
+                      <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                          <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                            <i class="far fa-ellipsis-h nav-icon"></i>
+                            <p>Geral</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                            <i class="far fa-ellipsis-h nav-icon"></i>
+                            <p>Específica</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Lançamento</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Contas a Pagar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Contas a receber</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Movimentos</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-trash-o"></i>
+                Documentos
+                <i class="fas fa-angle-left right"></i>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Novo Documento</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Gerais</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Exarados</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Emitidos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Recebidos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos | Actas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos | Relatórios</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção da Mulher
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova Actividade</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção Juvenil
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção da Criança
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Secretaria Cultural
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Secretaria da Fiscalização
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+      </div>
+    </aside>
+    <div class="content-wrapper">
+      <section class="content-header">
+        <div class="container-fluid">
+        </div>
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+          <!-- SELECT2 EXAMPLE -->
+          <div class="card card-default">
+            <div class="card-header">
+              <h3 style="text-align: center; color: #447e9b">Painel de Cadastramento Geral de Membro</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="card card-info card-tabs">
+                <div class="card-header p-0 pt-1">
+                  <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist" style="background-color: #447e9b;">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill"
+                        href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home"
+                        aria-selected="true">Cadastramento de Membro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill"
+                        href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile"
+                        aria-selected="false">Dados dos Pais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill"
+                        href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages"
+                        aria-selected="false">Hablitações Literárias</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                        href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Dados Profissionais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-settings-tab" data-toggle="pill"
+                        href="#custom-tabs-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Dados de Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-settings-tab" data-toggle="pill"
+                        href="#custom-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Informação da Função</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-adress-tab" data-toggle="pill"
+                        href="#custom-tabs-adress" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Dados de Endereço</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-one-tabContent">
+                    <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel"
+                      aria-labelledby="custom-tabs-one-home-tab">
+                      <!--hsddddddddddddddddddddddddddddddddd-->
+                      <form  class="form_membros">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Nome Completo</label>
+                            <div class="">
+                              <input type="text" class="form-control input"/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label>Naturalidade</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Alabama</option>
+                              <option>Alaska</option>
+                              <option>California</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Provincia</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Luanda</option>
+                              <option>Alaska</option>
+                              <option>California</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Municipio</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Cazenga</option>
+                              <option>Alaska</option>
+                              <option>California</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group">
+                              <label>Data de Nascimento</label>
+                              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#reservationdate" />
+                                <div class="input-group-append" data-target="#reservationdate"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /.input group -->
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group">
+                              <label>Data de Admissão à Igreja</label>
+                              <div class="input-group date" id="dataadmissao" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#dataadmissao" />
+                                <div class="input-group-append" data-target="#dataadmissao"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label>Baptizado</label>
+                            <select class="select2" onchange="disableds()" style="width: 100%;" name="batizado" id="batizado">
+                              <option selected="selected">Seleciona a opção</option>
+                              <option value="Não">Não</option>
+                              <option value="Sim">Sim</option>
+                            </select>
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group" id="databatismo">
+                              <label id="labeldatabatismo">Data de Baptismo</label>
+                              <div class="input-group date" id="databatismo" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#databatismo" name="datadobatismo" id="dataquefoibatizado" disabled/>
+                                <div id="divCalendar" class="input-group-append" data-target="#databatismo"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /.input group -->
+                          </div>
+                          <div class="form-group">
+                            <label>Órfão?</label>
+                            <select onchange="disableds()" class="select2" style="width: 100%;" id="orfao">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Não">Não</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Escolha a parte de que é Órfão</label>
+                            <select class="select2" style="width: 100%;" id="partedequeeorfao" disabled>
+                              <option selected="selected">Escolha uma opção</option>
+                              <option>Mãe</option>
+                              <option>Pai</option>
+                              <option>De Pais</option>
+                            </select>
+                          </div>
+                          <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Número do Cartão de Membro</label>
+                              <input type="text" class="form-control datetimepicker-input" name="numerocartaomembro" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Categoria</label>
+                            <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                              <option>Cristão</option>
+                              <option>Alaska</option>
+                              <option>California</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <!-- /.form-group -->
+                          <div class="form-group">
+                            <label>Estado Religioso</label>
+                            <select class="select2" style="width: 100%;">
+                              <option selected="selected">Casado</option>
+                              <option>Solteiro</option>
+                              <option>Vivência Marital</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Tribo</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Norte</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Área</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Alabama</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Tem participado à casa santa?</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Não">Não</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Posição</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option>Orador</option>
+                              <option>Servidor</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Portador de alguma Deficiência?</label>
+                            <select onchange="disableds()" class="form-control select2" style="width: 100%;" id="temdeficiencia">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Não">Não</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Seleciona a deficiência</label>
+                            <select class="form-control select2" style="width: 100%;" disabled id="seleccaoDeficiencia">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option>Múltipla</option>
+                              <option value="Física">Física</option>
+                              <option value="Mental">Mental</option>
+                              <option value="Visual">Visual</option>
+                              <option value="Reabilitado">Reabilitado</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Participa à escola dominical?</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Não">Não</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Gênero</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Femenino</option>
+                              <option>Masculino</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Estado do Membro</label>
+                            <select id="estadoMembro" class="form-control select2" style="width: 100%;">
+                              <option selected="selected">Escolha uma opção</option>
+                              <option value="Ativo">Ativo</option>
+                              <option value="Passivo">Passivo</option>
+                            </select>
+                          </div>
+                          <!-- /.form-group -->
+                        </div>
+                        <div class="" style="margin-top: 3rem;">
+                          <button type="submit" class="btn btn-info" style="width: 200%;background-color: #447e9b;">Cadastrar</button>
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                    </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel"
+                      aria-labelledby="custom-tabs-one-profile-tab">
+                      <form class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select onchange="disableds()" class="form-control select2" style="width: 100%;" id="SelecionaMembro">
+                                <option value="Sleciona o Membro" selected="selected">Sleciona o Membro</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="California">California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>O Pai é Tocoista</label>
+                              <select class="form-control select2" style="width: 100%;" id="PaiTocoista" disabled>
+                                <option selected="selected">Escolha uma Opção</option>
+                                <option>Sim</option>
+                                <option>Não</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Pertence a Classe Maquiesse</label>
+                              <select class="form-control select2" style="width: 100%;" id="PertenceClasse" disabled>
+                                <option selected="selected">Sim</option>
+                                <option>Não</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Seleciona o Pai</label>
+                              <select class="form-control select2" style="width: 100%;" id="SelecionaPai" disabled>
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Digite o nome Completo do Pai</label>
+                              <div class="">
+                                <input type="text" class="form-control input" id="digiteNomePai" disabled/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <div class="form-group">
+                                <label>A mãe é Tocoísta?</label>
+                                <select class="form-control select2" style="width: 100%;" id="maeTocoista" disabled>
+                                  <option selected="selected">Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label>Pertence à Classe Maquiesse?</label>
+                                <select class="form-control select2" style="width: 100%;" id="MaePertenceAclasse">
+                                  <option selected="selected">Não</option>
+                                  <option>Sim</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label>Escolha a mãe do membro</label>
+                                <select class="form-control select2" style="width: 100%;" id="selecionaMae">
+                                  <option selected="selected">Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label>Nome Completo</label>
+                                <div class="">
+                                  <input type="text" class="form-control input" id="NomeCompletoMae"/>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label>Estado dos Pais (isso, no caso de os pais não forem Tocoistas)</label>
+                                <select class="form-control select2" style="width: 100%;" id="EstadoPais">
+                                  <option selected="selected">Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- /.form-group -->
+                            <!-- /.form-group -->
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%;background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel"
+                      aria-labelledby="custom-tabs-one-messages-tab">
+                      <form class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Habilitação Literária</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Curso</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Data de Início</label>
+                              <div class="input-group date" id="dataadmissao" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#dataadmissao" />
+                                <div class="input-group-append" data-target="#dataadmissao"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Data de Fim</label>
+                              <div class="input-group date" id="dataadmissao" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                  data-target="#dataadmissao" />
+                                <div class="input-group-append" data-target="#dataadmissao"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Estado</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%; background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                      aria-labelledby="custom-tabs-one-settings-tab">
+                      <form class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Profissão</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Função</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Designação Colectiva (Opcional)</label>
+                              <div class="">
+                                <input type="text" class="form-control input"/>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Estado Profissional</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Cristão</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%; background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-settings" role="tabpanel"
+                      aria-labelledby="custom-tabs-settings">
+                      <form class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Seleciona o Contacto</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>É o Principal?</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Não</option>
+                                <option>Sim</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Estado do Contacto</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Activo</option>
+                                <option>Desativo</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%; background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="custom-settings" role="tabpanel"
+                      aria-labelledby="custom-settings">
+                      <form class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Cargo na Classe?</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Escolha uma Opção</option>
+                                <option>Sim</option>
+                                <option>Não</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Escolha a estrutura</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Paróquia</option>
+                                <option>Tribo</option>
+                                <option>Área</option>
+                                <option>Província Eclesiástica</option>
+                                <option>Catedral Central</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Escolha a função</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Sim</option>
+                                <option>Não</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Posição</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Geral</option>
+                                <option>Executivo</option>
+                                <option>Director de Evangelização</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Nível de Desempenho</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Conselho da Criança</option>
+                                <option>Pastoral Juvenil</option>
+                                <option>Direcção</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%; background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="custom-tabs-adress" role="tabpanel"
+                      aria-labelledby="custom-tabs-adress">
+                      <form class="form-group" action="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Seleciona o Membro</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Província</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Município</label>
+                              <select class="form-control select2" style="width: 100%;">
+                                <option selected="selected">Alabama</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label>Bairro</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Cristão</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Rua</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Cristão</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label>Número da Casa</label>
+                              <select class="select2" data-placeholder="Escolha Categoria" style="width: 100%;">
+                                <option>Cristão</option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="" style="margin-top: 3rem;">
+                            <button type="submit" class="btn btn-info" style="width: 200%; background-color: #447e9b;">Cadastrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0-rc
+    </div>
+    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">SGECM</a>.</strong> Todos direitos reservados.
+  </footer>
+  <aside class="control-sidebar control-sidebar-dark">
+  </aside>
+  </div>
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Select2 -->
+  <script src="../../plugins/select2/js/select2.full.min.js"></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+  <!-- InputMask -->
+  <script src="../../plugins/moment/moment.min.js"></script>
+  <script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+  <!-- date-range-picker -->
+  <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- bootstrap color picker -->
+  <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Bootstrap Switch -->
+  <script src="../../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+  <!-- BS-Stepper -->
+  <script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+  <!-- dropzonejs -->
+  <script src="../../plugins/dropzone/min/dropzone.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function (){
+      //Initialize Select2 Elements
+      $('.select2').select2()
+
+      //Initialize Select2 Elements
+      $('.select2bs4').select2({
+        theme: 'bootstrap4'
+      })
+
+      //Datemask dd/mm/yyyy
+      $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+      //Datemask2 mm/dd/yyyy
+      $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+      //Money Euro
+      $('[data-mask]').inputmask()
+
+      //Date range picker
+      $('#reservationdate').datetimepicker({
+        format: 'L'
+      });
+      $('#dataadmissao').datetimepicker({
+        format:'L'
+      });
+      $('#databatismo').datetimepicker({
+        format:'L'
+      });
+      //Date range picker
+      $('#reservation').daterangepicker()
+      //Date range picker with time picker
+      $('#reservationtime').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {
+          format: 'MM/DD/YYYY hh:mm A'
+        }
+      })
+      //Date range as a button
+      $('#daterange-btn').daterangepicker(
+        {
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        },
+        function (start, end) {
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+        }
+      )
+
+      //Timepicker
+      $('#timepicker').datetimepicker({
+        format: 'LT'
+      })
+
+      //Bootstrap Duallistbox
+      $('.duallistbox').bootstrapDualListbox()
+
+      //Colorpicker
+      $('.my-colorpicker1').colorpicker()
+      //color picker with addon
+      $('.my-colorpicker2').colorpicker()
+
+      $('.my-colorpicker2').on('colorpickerChange', function (event) {
+        $('.my-colorpicker2 .fa-square').css('color', event.color.toString());
+      });
+
+      $("input[data-bootstrap-switch]").each(function () {
+        $(this).bootstrapSwitch('state', $(this).prop('checked'));
+      });
+
+    })
+    // BS-Stepper Init
+    document.addEventListener('DOMContentLoaded', function () {
+      window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+    });
+
+    // DropzoneJS Demo Code Start
+    Dropzone.autoDiscover = false;
+
+    // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+    var previewNode = document.querySelector("#template");
+    previewNode.id = "";
+    var previewTemplate = previewNode.parentNode.innerHTML;
+    previewNode.parentNode.removeChild(previewNode);
+
+    var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+      url: "/target-url", // Set the url
+      thumbnailWidth: 80,
+      thumbnailHeight: 80,
+      parallelUploads: 20,
+      previewTemplate: previewTemplate,
+      autoQueue: false, // Make sure the files aren't queued until manually added
+      previewsContainer: "#previews", // Define the container to display the previews
+      clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+    });
+
+    myDropzone.on("addedfile", function (file) {
+      // Hookup the start button
+      file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file); };
+    });
+
+    // Update the total progress bar
+    myDropzone.on("totaluploadprogress", function (progress) {
+      document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
+    });
+
+    myDropzone.on("sending", function (file) {
+      // Show the total progress bar when upload starts
+      document.querySelector("#total-progress").style.opacity = "1";
+      // And disable the start button
+      file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
+    });
+
+    // Hide the total progress bar when nothing's uploading anymore
+    myDropzone.on("queuecomplete", function (progress) {
+      document.querySelector("#total-progress").style.opacity = "0";
+    });
+
+    // Setup the buttons for all transfers
+    // The "add files" button doesn't need to be setup because the config
+    // `clickable` has already been specified.
+    document.querySelector("#actions .start").onclick = function () {
+      myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+    };
+    document.querySelector("#actions .cancel").onclick = function () {
+      myDropzone.removeAllFiles(true);
+    };
+    // DropzoneJS Demo Code End
+  </script>
+</body>
+
+</html>

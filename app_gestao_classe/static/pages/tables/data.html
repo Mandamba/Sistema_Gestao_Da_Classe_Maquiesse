@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classe Maquiesse | Dados Gerais dos Membros</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../pages/examples/contacts.html" class="nav-link">Direcção da Classe</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Visão</a>
+        </li>
+      </ul>
+      <!--<div class="dropdown-divider">
+        <li class="nav-item dropdown"><a href="pages/examples/login-v2.html">Sair do Sistema</a></li>
+
+      </div>-->
+    </nav>
+    <!-- Navbar -->
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-blue-primary elevation-4">
+      <!-- Brand Logo -->
+      <!--<a href="../../index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+      </a>-->
+      <img src="../../dist/img/estrela.jpg" alt="Estrela da Igreja" class="brand-image img-circle elevation-3"
+        style="opacity: .7; width: 3rem; margin-left: 6.5rem; margin-top: 1rem;">
+      <a href="index.html" class="brand-link">
+        <span class="brand-text font-weight-light">
+          <h2 style="text-align: center;">SGECM</h2>
+        </span>
+      </a>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+
+        <!-- SidebarSearch Form -->
+        <!--<div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>-->
+
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Marcos Mandamba</a>
+          </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Gestão Geral
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Membros
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../../pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="nav-icon fas fa-users"></i>
+                        Novo Membro
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../../pages/tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fas fa-table"></i>
+                        <p>Membros no Geral</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Actividades
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Todas Actividades</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Nova</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Património
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Lista Patrimonial</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                        <i class="far fa-ellipsis-h nav-icon"></i>
+                        <p>Registro Novo</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-trash-o"></i>
+                    Financeira
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item" style="margin-left: 1rem;">
+                      <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-trash-o"></i>
+                        Caixa
+                        <i class="fas fa-angle-left right"></i>
+                      </a>
+                      <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                          <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                            <i class="far fa-ellipsis-h nav-icon"></i>
+                            <p>Geral</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                            <i class="far fa-ellipsis-h nav-icon"></i>
+                            <p>Específica</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Lançamento</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Contas a Pagar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Contas a receber</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Movimentos</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-trash-o"></i>
+                Documentos
+                <i class="fas fa-angle-left right"></i>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Novo Documento</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Gerais</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Exarados</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Emitidos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos Recebidos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos | Actas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                    <i class="far fa-ellipsis-h nav-icon"></i>
+                    <p>Documentos | Relatórios</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção da Mulher
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova Actividade</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção Juvenil
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Direcção da Criança
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Secretaria Cultural
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Secretaria da Fiscalização
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Membros
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="nav-icon fas fa-users"></i>
+                      Novo Membro
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fas fa-table"></i>
+                      <p>Membros no Geral</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Actividades
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Todas Actividades</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Nova</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Patrimonial
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Relatório Geral</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                      <i class="far fa-ellipsis-h nav-icon"></i>
+                      <p>Registro Novo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-trash-o"></i>
+                  Financeira
+                  <i class="fas fa-angle-left right"></i>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item" style="margin-left: 1rem;">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-trash-o"></i>
+                      Caixa
+                      <i class="fas fa-angle-left right"></i>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Geral</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                          <i class="far fa-ellipsis-h nav-icon"></i>
+                          <p>Específica</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Lançamento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a Pagar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Contas a receber</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="margin-left: 1rem;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Movimentos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-trash-o"></i>
+              Documentos
+              <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Novo Documento</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/membro.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Gerais</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Exarados</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Emitidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos Recebidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Actas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link" style="text-align: center;">
+                  <i class="far fa-ellipsis-h nav-icon"></i>
+                  <p>Documentos | Relatórios</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          </li>
+          <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <!--<section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>PAINEL DE MEMBROS</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">DataTables</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      <!--</section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <div class="wrapper">
+          </div>
+          <!-- /.card -->
+
+        </div>
+        <div class="row" style="margin-top: 3rem;">
+          <div class="col-12 col-sm-12">
+            <div class="card card-info card-tabs">
+              <div class="card-header p-0 pt-1">
+                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist" style="background-color: #447e9b">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill"
+                      href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home"
+                      aria-selected="true">Lista Geral dos Membros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill"
+                      href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile"
+                      aria-selected="false">Pais</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill"
+                      href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages"
+                      aria-selected="false">Conselho da Mulher</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Conselho Juvenil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Conselho da Criança</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Viúvas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">ôrfãos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Estudantes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Trabalhadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Lista dos Estudantes e Trabalhadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Idosas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Em Conflitos com a lei</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Lista dos Estudantes e Trabalhadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Em transgressão com o Sétmimo</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="custom-tabs-one-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-home-tab">
+                    <!--hsddddddddddddddddddddddddddddddddd-->
+                    <div class="card">
+                      <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Foto</th>
+                              <th>Nome Próprio</th>
+                              <th>Alcunho</th>
+                              <th>Naturalidade</th>
+                              <th>Provincia</th>
+                              <th>Minicípio</th>
+                              <th>Categoria</th>
+                              <th>Estado Religioso</th>
+                              <th>Data de Admissão</th>
+                              <th>Data de Nascimento</th>
+                              <th>Frequência</th>
+                              <th>Condição Actual</th>
+                            </tr>
+
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Trident</td>
+                              <td>Trident</td>
+                              <td>Internet
+                                Explorer 4.0
+                              </td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                            </tr>
+                            <tr>
+                              <td>Trident</td>
+                              <td>Trident</td>
+                              <td>Internet
+                                Explorer 4.0
+                              </td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                            </tr>
+                            <tr>
+                              <td>Trident</td>
+                              <td>Trident</td>
+                              <td>Internet
+                                Explorer 4.0
+                              </td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>Win 95+</td>
+                              <td> 4</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                              <td>X</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th>Rendering engine</th>
+                              <th>Rendering engine</th>
+                              <th>Browser</th>
+                              <th>Platform(s)</th>
+                              <th>Engine version</th>
+                              <th>CSS grade</th>
+                              <th>Browser</th>
+                              <th>Platform(s)</th>
+                              <th>Engine version</th>
+                              <th>CSS grade</th>
+                              <th>CSS grade</th>
+                              <td>X</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-profile-tab">
+                    Mauris tincidunt mi at erat gravida, eget tristique urna bibendum. Mauris pharetra purus ut
+                    ligula
+                    tempor, et vulputate metus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Maecenas
+                    sollicitudin, nisi a luctus interdum, nisl ligula placerat mi, quis posuere purus ligula eu
+                    lectus. Donec nunc tellus, elementum sit amet ultricies at, posuere nec nunc. Nunc euismod
+                    pellentesque diam.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-messages" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-messages-tab">
+                    Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat
+                    augue
+                    id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem,
+                    ac
+                    tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit
+                    condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus
+                    tristique.
+                    Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin
+                    est
+                    libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id
+                    fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare
+                    magna.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                  <div class="tab-pane fade" id="custom-tabs-one-settings" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-settings-tab">
+                    Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus
+                    turpis ac,
+                    ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate.
+                    Morbi
+                    euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec
+                    interdum
+                    placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat
+                    diam.
+                    Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent
+                    imperdiet
+                    accumsan ex sit amet facilisis.
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Versão</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 0021 <a href="https://adminlte.io">SGECM</a>.</strong> Todos direitos reservados
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../../plugins/jszip/jszip.min.js"></script>
+  <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+</body>
+
+</html>

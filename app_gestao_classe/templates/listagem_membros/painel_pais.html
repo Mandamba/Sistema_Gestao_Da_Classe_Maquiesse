@@ -1,0 +1,260 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classe Maquiesse | Dados Gerais dos Membros</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=' {% static "plugins/fontawesome-free/css/all.min.css" %} '>
+  <!-- DataTables -->
+  <link rel="stylesheet" href=' {% static "plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" %} '>
+  <link rel="stylesheet" href=' {% static "plugins/datatables-responsive/css/responsive.bootstrap4.min.css" %}'>
+  <link rel="stylesheet" href=' {% static "plugins/datatables-buttons/css/buttons.bootstrap4.min.css" %} '>
+  <!-- Theme style -->
+  <link rel="stylesheet" href=' {% static "dist/css/adminlte.min.css" %}'>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="/paginaPrincipal" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../pages/examples/contacts.html" class="nav-link">Direcção da Classe</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Visão</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Informações e Notícias da Classe</a>
+        </li>
+      </ul>
+      <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link"> <strong>Data e Hora: {{data }}</strong></a>
+        </li>
+    </nav>
+    <aside class="main-sidebar sidebar-blue-primary elevation-4" id="aside">
+    
+      {% include 'admin_templates/menu_navegacao.html' %}
+    </aside>
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          <div class="wrapper">
+          </div>
+          <!-- /.card -->
+
+        </div>
+        <div class="row" style="margin-top: 3rem;">
+          <div class="col-12 col-sm-12">
+            <div class="card card-info card-tabs">
+              <div class="card-header p-0 pt-1">
+                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist" style="background-color: #447e9b">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill"
+                      href="/membros" role="tab" aria-controls="custom-tabs-one-home"
+                      aria-selected="true">Membros | Total : <strong  style="color: red"></strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill"
+                      href="/Jovens" role="tab" aria-controls="custom-tabs-one-profile"
+                      aria-selected="false">Jovens | Total : <strong  style="color: red">  {{ jovens }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill"
+                      href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages"
+                      aria-selected="false">Jovens Masculino | Total : <strong  style="color: red">  {{ jovensMasculino }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Jovens Femenino | Total : <strong  style="color: red">  {{ jovensFemenino }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Crianças | Total : <strong  style="color: red">  {{ total }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Crianças Femenino | Total : <strong  style="color: red">  {{ criancas_femenino }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Crianças Masculino | Total : <strong  style="color: red">  {{ criancas_masculino }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Adolescentes | Total : <strong  style="color: red">  {{ adolescentes }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Adolescentes Masculino | Total : <strong  style="color: red">  {{ adolescentes_masculino }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Adolescentes Femenino | Total : <strong  style="color: red">  {{ adolescentes_femenino }} </strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Conselho da Criança | Total : <strong  style="color: red">  {{ total_conselho_crianca }} </strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Papás | Total : <strong  style="color: red">  {{ papas }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Mamãs | Total : <strong  style="color: red">  {{ mamas }}</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                      href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                      aria-selected="false">Em transgressão com o Sétmimo</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="custom-tabs-one-tabContent">
+                  <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel"
+                    aria-labelledby="custom-tabs-one-home-tab">
+                    <!--hsddddddddddddddddddddddddddddddddd-->
+                    <div class="card">
+                      <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Foto</th>
+                              <th>Nome Completo</th>
+                              <th>Gênero</th>
+                              <th>Portador de Deficiência</th>
+                              <th>Admissão</th>
+                              <th>Área</th>
+                              <th>Nascimento</th>
+                              <th>Ação Eliminar</th>
+                              <th>Ação Editar</th>
+                              <th>Ação Detalhe</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          {% for membro in crianca %}
+                            <tr>
+                              <td>{{membro.id}}</td>
+                              <td> <img src="{{membro.imagem}}" style="width:3rem; height:4rem; border-radius:3px"/></td>
+                              <td>{{membro.nomeCompleto}}</td>
+                              <td>{{membro.genero}}</td>
+                              <td>{{membro.portadorDeficiencia}}</td>
+                              <td>{{membro.dataAdmissaoIgreja}}</td>
+                              <td>{{membro.area.area}}</td>
+                              <td>{{membro.dataNascimento}}</td>
+                              <td><a class="btn btn-danger" href="#" style="">Eliminar</a></td>
+                              <td><a class="btn btn-success" href="/editar_membro/{{ membro.id}}" style="">Editar</a></td>
+                              <td><a class="btn btn-info" href="/detalhe_membro/{{ membro.id}}" style="">Detalhe</a></td>
+                            </tr>
+                            {% endfor %}
+                          </tbody>
+                          <tfoot>
+                            
+                          </tfoot>
+                        </table>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- /.col -->
+  </div>
+  <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Versão</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 0021 <a href="https://adminlte.io">SGECM</a>.</strong> Todos direitos reservados
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src=' {% static "plugins/jquery/jquery.min.js" %}'></script>
+  <!-- Bootstrap 4 -->
+  <script src=' {% static "plugins/bootstrap/js/bootstrap.bundle.min.js" %} '></script>
+  <!-- DataTables  & Plugins -->
+  <script src=' {% static "plugins/datatables/jquery.dataTables.min.js" %} '></script>
+  <script src=' {% static "plugins/datatables-bs4/js/dataTables.bootstrap4.min.js" %} '></script>
+  <script src=' {% static "plugins/datatables-responsive/js/dataTables.responsive.min.js" %}'></script>
+  <script src=' {% static "plugins/datatables-responsive/js/responsive.bootstrap4.min.js" %}'></script>
+  <script src=' {% static "plugins/datatables-buttons/js/dataTables.buttons.min.js" %}'></script>
+  <script src=' {% static "plugins/datatables-buttons/js/buttons.bootstrap4.min.js" %}'></script>
+  <script src=' {% static "plugins/jszip/jszip.min.js" %} '></script>
+  <script src=' {% static "plugins/pdfmake/pdfmake.min.js" %}'></script>
+  <script src=' {% static "plugins/pdfmake/vfs_fonts.js" %} '></script>
+  <script src=' {% static "plugins/datatables-buttons/js/buttons.html5.min.js" %} '></script>
+  <script src=' {% static "plugins/datatables-buttons/js/buttons.print.min.js" %} '></script>
+  <script src=' {% static "plugins/datatables-buttons/js/buttons.colVis.min.js" %}'></script>
+  <!-- AdminLTE App -->
+  <script src=' {% static "dist/js/adminlte.min.js" %}'></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src=' {% static "dist/js/demo.js" %} '></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+</body>
+
+</html>

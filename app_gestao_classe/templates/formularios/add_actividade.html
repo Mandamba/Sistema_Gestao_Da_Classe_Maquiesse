@@ -1,0 +1,548 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SECM | Cadastramento de Membro</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href=' {% static "plugins/fontawesome-free/css/all.min.css" %} '>
+  <!-- daterange picker -->
+  <link rel="stylesheet" href=' {% static "plugins/daterangepicker/daterangepicker.css" %} '>
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href=' {% static "plugins/icheck-bootstrap/icheck-bootstrap.min.css" %} '>
+  <!-- Bootstrap Color Picker -->
+  <link rel="stylesheet" href=' {% static "plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" %}'>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href=' {% static "plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" %}'>
+  <!-- Select2 -->
+  <link rel="stylesheet" href=' {% static "plugins/select2/css/select2.min.css" %} '>
+  <link rel="stylesheet" href=' {% static "plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" %}'>
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href=' {% static "plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css" %}'>
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href=' {% static "plugins/bs-stepper/css/bs-stepper.min.css" %}'>
+  
+  <link rel="stylesheet" href=' {% static "dist/css/main.css" %}'>
+  <link rel="stylesheet" href=' {% static "dist/css/style.css" %}'>
+  <!-- dropzonejs -->
+  <link rel="stylesheet" href=' {% static "plugins/dropzone/min/dropzone.min.css" %}'>
+  <!-- Theme style -->
+  <link rel="stylesheet" href=' {% static "dist/css/adminlte.min.css" %}'>
+  <script src=' {% static "dist/js/inputs.js" %}'></script>
+  <script src=' {% static "dist/js/geral.js" %}'></script>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="/paginaPrincipal" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../pages/examples/contacts.html" class="nav-link">Direcção da Classe</a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-blue-info elevation-3" id="aside">
+      <!-- Brand Logo -->
+      {% include 'admin_templates/menu_navegacao.html' %}
+    </aside>
+    <div class="content-wrapper">
+      <section class="content-header">
+        <div class="container-fluid">
+        </div>
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+          <!-- SELECT2 EXAMPLE -->
+          <div class="card card-default">
+            <div class="card-header">
+              <h3 style="text-align: center; color: #447e9b">Registro de Actividades</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12">
+              <div class="card card-info card-tabs">
+                <div class="card-header p-0 pt-1">
+                  <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist" style="background-color: #447e9b;">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill"
+                        href="/add_actividade" role="tab" aria-controls="custom-tabs-one-home"
+                        aria-selected="true">Registro de Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill"
+                        href="/add_filiacao" role="tab" aria-controls="custom-tabs-one-profile"
+                        aria-selected="false">Cultos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill"
+                        href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages"
+                        aria-selected="false">Reuniões</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-settings-tab" data-toggle="pill"
+                        href="#custom-tabs-one-settings" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Culturais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-settings-tab" data-toggle="pill"
+                        href="/add_membro" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Espirituais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-settings-tab" data-toggle="pill"
+                        href="/add_membro" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Sociais</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-adress-tab" data-toggle="pill"
+                        href="#custom-tabs-adress" role="tab" aria-controls="custom-tabs-one-settings"
+                        aria-selected="false">Evangélicas</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-one-tabContent">
+                    <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel"
+                      aria-labelledby="custom-tabs-one-home-tab">
+                      {% if messages %}
+                          <div class="">
+                              {% for message in messages %}
+                                  {% if message.tags == 'error' %}
+                                  <span class="alert alert-danger" style="width: 20; display: flex; text-align: center;">{{ message }}</span>
+                                  {% else %}
+                                    {% if message.tags == 'success' %}
+                                      <span class="alert alert-success" style="width: 20; display: flex; text-align: center;">{{ message }}</span>
+                                      {% else %}
+                                    <span class="alert alert-warning" style="width: 20; display: flex; text-align: center; color: white;">{{ message }}</span>
+                                    {% endif %}
+                                  {% endif %}
+                              {% endfor %}
+                        </div>
+                      {% endif %}
+                      <form role='form' class="membro" action="/add_membro_save" method="post" enctype="multipart/form-data">{% csrf_token %}
+                      <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Tipo de Actividade</label>
+                            <select type="text" name="municipio" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for municipio in municipios %}
+                              
+                              <option value="{{ municipio.id }}">{{ municipio.municipio }}</option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Classificacao da Actividade</label>
+                            <select type="text" name="municipio" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for municipio in municipios %}
+                              
+                              <option value="{{ municipio.id }}">{{ municipio.municipio }}</option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Realizador</label>
+                            <select type="text" name="municipio" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for municipio in municipios %}
+                              
+                              <option value="{{ municipio.id }}">{{ municipio.municipio }}</option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group">
+                              <label>Data de Realização</label>
+                              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                <input name="dataNascimento" type="dataAdmissaoIgreja" class="form-control datetimepicker-input"
+                                  data-target="#reservationdate" />
+                                <div class="input-group-append" data-target="#reservationdate"
+                                  data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Horário de Início</label>
+                              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                <input name="dataNascimento" type="time" class="form-control datetimepicker-input"
+                                  data-target="#reservationdate" />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Horário de término</label>
+                              <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                                <input name="dataNascimento" type="time" class="form-control datetimepicker-input"
+                                  data-target="#reservationdate" />
+                              </div>
+                            </div>
+                            <!-- /.input group -->
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group">
+                              <label>Número de Participantes</label>
+                              <div class="input-group " id="dataadmisao" data-target-input="nearest">
+                                <input name="dataAdmissaoIgreja" type="Number" class="form-control"
+                                  data-target="#dataadmissao" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <!-- Date -->
+                            <div class="form-group">
+                            <label>Número de membros do corpo de presidium</label>
+                            <select type="text" name="categoria" class="form-control select2" style="width: 100%;">
+                              <option selected>1 à 2</option>
+                              <option selected>1 à 3</option>
+                              <option selected>1 à 5</option>
+                              <option selected>1 à 6</option>
+                              <option selected>1 à 8</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Primeiro</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Primeiro</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Segundo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Segundo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Terceiro</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Terceiro</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Quarto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do quarto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Quinto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Quinto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Sexto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Sexto</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Sétimo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Sétimo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Oitavo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Função do Oitavo</label>
+                            <select type="text" name="tribo" class="form-control select2" style="width: 100%;">
+                              <option selected></option>
+                              {% for tribo in tribo %}
+                              
+                              <option value="{{ tribo.id }}"> {{ tribo.tribo }} </option>
+
+                              {% endfor %}
+                            </select>
+                          </div>
+                            <!-- /.input group -->
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          
+                          <!-- /.form-group -->
+                          <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Objectivo da actividade</label>
+                              <input name="numeroCartao" type="text" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Número de Pontos</label>
+                              <input name="numeroCartao" type="Number" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Primeiro</label>
+                              <input name="numeroCartao" type="Number" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Segundo</label>
+                              <input name="numeroCartao" type="Number" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Terceiro</label>
+                              <input name="numeroCartao" type="Number" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Quarto</label>
+                              <input name="numeroCartao" type="Number" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Coro a)</label>
+                              <input name="numeroCartao" type="text" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Coro b)</label>
+                              <input name="numeroCartao" type="text" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-group" id="databatismo">
+                            <label id="labeldatabatismo">Coro c)</label>
+                              <input name="numeroCartao" type="text" class="form-control"/>
+                          </div>
+                          <div class="form-group">
+                            <label>Introdução</label>
+                            <textarea name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">
+                              
+                            </textarea>
+                          </div> 
+                          <div class="form-group">
+                            <label>Desenvolvimento</label>
+                            <textarea name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">
+                              
+                            </textarea>
+                          </div>
+                          <div class="form-group">
+                            <label>Considerações Finais</label>
+                            <textarea name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">
+                              
+                            </textarea>
+                          </div> 
+                          <div class="form-group">
+                            <label>Anexo1</label>
+                            <input type="file" name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">>
+                          </div>
+                          <div class="form-group">
+                            <label>Anexo2</label>
+                            <input type="file" name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">>
+                          </div>
+                          <div class="form-group">
+                            <label>Anexo3</label>
+                            <input type="file" name="portadorDeficiencia" onchange="disableds()" class="form-control" style="width: 100%;" id="temdeficiencia">>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </form>
+
+                    </div>
+                    <div class="" style="margin-top: 3rem;">
+                          <button  type="submit" class="btn btn-info" style="width: 200%;background-color: #447e9b;">Cadastrar</button>
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0-rc
+    </div>
+    <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">SGECM</a>.</strong> Todos direitos reservados.
+  </footer>
+  <aside class="control-sidebar control-sidebar-dark">
+  </aside>
+  </div>
+  <script src=' {% static "plugins/jquery/jquery-1.8.2.js" %} '></script>
+  <script src=' {% static "plugins/jquery/jquery.min.js" %} '></script>
+  <!-- Bootstrap 4 -->
+  <script src=' {% static "plugins/bootstrap/js/bootstrap.bundle.min.js" %} '></script>
+  <!-- Select2 -->
+  <script src=' {% static "plugins/select2/js/select2.full.min.js" %}'></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src=' {% static "plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js" %}'></script>
+  <!-- InputMask -->
+  <script src=' {% static "plugins/moment/moment.min.js" %} '></script>
+  <script src=' {% static "plugins/inputmask/jquery.inputmask.min.js" %} '></script>
+  <!-- date-range-picker -->
+  <script src=' {% static "plugins/daterangepicker/daterangepicker.js" %}'></script>
+  <!-- bootstrap color picker -->
+  <script src=' {% static "plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js" %}'></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src=' {% static "plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js" %}'></script>
+  <!-- Bootstrap Switch -->
+  <script src=' {% static "plugins/bootstrap-switch/js/bootstrap-switch.min.js" %}'></script>
+  <!-- BS-Stepper -->
+  <script src=' {% static "plugins/bs-stepper/js/bs-stepper.min.js" %}'></script>
+  <!-- dropzonejs -->
+  <script src=' {% static "plugins/dropzone/min/dropzone.min.js" %} '></script>
+  <!-- AdminLTE App -->
+  <script src=' {% static "dist/js/adminlte.min.js" %} '></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src=' {% static "dist/js/demo.js" %} '></script>
+  <script src=' {% static "dist/js/inputs.js" %} '></script>
+  <script src=' {% static "dist/js/manipulacao.js" %} '></script>
+  <!-- Page specific script -->
+
+</body>
+
+</html>
